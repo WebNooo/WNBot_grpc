@@ -1,4 +1,4 @@
-module wnbot_grpc
+module github.com/WebNooo/WNBot_grpc
 
 go 1.21.4
 
