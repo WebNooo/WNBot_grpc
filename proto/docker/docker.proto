@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package docker;
+
+option go_package = "wndev.docker.v1;dockerv1";
+
+service Docker{
+	rpc GetContainers (ContainersRequest) returns (ContainersResponse);
+}
+
+message ContainersRequest {
+	string server_id = 1;
+}
+
+message ContainersResponse {
+	string id = 1;
+}
+
